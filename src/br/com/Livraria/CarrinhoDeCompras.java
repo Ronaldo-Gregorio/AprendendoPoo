@@ -11,6 +11,13 @@ public class CarrinhoDeCompras extends Livro{
         total += livro.getValor();
     }
 
+    public void adiciona(Revista revista){
+
+        System.out.println("Adicionando: " + revista);
+        revista.aplicaDescontoDe(0.16);
+        total += revista.getValor();
+    }
+
     public double getTotal(){
         return total;
     }
