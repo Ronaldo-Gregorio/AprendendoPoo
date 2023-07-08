@@ -30,6 +30,7 @@ public class Livro {
 		if(porcentagem > 0.3) {
 			return false;
 		}
+		System.out.println("Aplicando desconto no Livro");
 		this.valor -= this.valor * porcentagem;
 		return true;
 		

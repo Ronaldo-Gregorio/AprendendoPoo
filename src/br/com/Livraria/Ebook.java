@@ -13,9 +13,8 @@ public class Ebook extends Livro{
 		if(porcentagem > 0.15) {
 			return false;
 		}
-		double desconto = super.getValor() * porcentagem;
-		super.setValor(super.getValor() - desconto);
-		return true;
+		System.out.println("Aplicando desconto no Ebook");
+		return super.aplicaDescontoDe(porcentagem);
 	}
 	
 	//setter e getters
