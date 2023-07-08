@@ -1,6 +1,6 @@
 package br.com.Livraria;
 
-public class Revista {
+public class Revista implements Produto{
     private String nome;
     private String descricao;
     private double valor;

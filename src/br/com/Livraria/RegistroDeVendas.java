@@ -19,7 +19,7 @@ public class RegistroDeVendas {
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
 
-        System.out.println("Total: " + carrinho.getTotal());
+        System.out.println("Total : " + carrinho.getTotal());
 
     }
     
