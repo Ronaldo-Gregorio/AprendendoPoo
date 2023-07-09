@@ -3,6 +3,7 @@ import br.com.casadocodigo.livraria.index.Autor;
 import br.com.casadocodigo.livraria.produtos.CarrinhoDeCompras;
 import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
 public class RegistroDeVendas {
 
@@ -28,6 +29,14 @@ public class RegistroDeVendas {
         carrinho.adiciona(ebook);
 
         System.out.println("Total : " + carrinho.getTotal());
+
+        Produto[] produtos = carrinho.getProdutos();
+
+        for(Produto produto : produtos){
+            if(produto != null){
+                System.out.println(produto.getValor());
+            }
+        }
 
     }
     

@@ -17,4 +17,9 @@ public class CarrinhoDeCompras extends Livro{
     public double getTotal(){
         return total;
     }
+
+    public Produto[] getProdutos() {
+        return produtos;
+    }
+    
 }
