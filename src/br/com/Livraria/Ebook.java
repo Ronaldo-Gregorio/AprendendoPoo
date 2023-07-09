@@ -1,6 +1,6 @@
 package br.com.Livraria;
 
-public class Ebook extends Livro{
+public class Ebook extends Livro implements Promocional{
 	
 	private String waterMark;
 	
@@ -14,7 +14,7 @@ public class Ebook extends Livro{
 			return false;
 		}
 		System.out.println("Aplicando desconto no Ebook");
-		return super.aplicaDescontoDe(porcentagem);
+		return aplicaDescontoDe(porcentagem);
 	}
 	
 	//setter e getters
