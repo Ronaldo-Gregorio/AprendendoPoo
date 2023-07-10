@@ -1,32 +1,30 @@
 package br.com.casadocodigo.livraria.produtos;
+import java.util.ArrayList;
 
 public class CarrinhoDeCompras extends Livro{
 
     private double total;
-    private Produto[] produtos;
-    private int contador = 0;
+    private ArrayList<Produto> produtos;
 
     public CarrinhoDeCompras(Produto[] produtos){
-        this.produtos = produtos;
-    }
-
-    public void remove(int posicao){
-        this.produtos[posicao] = null;
+        this.produtos = new ArrayList<>();
     }
 
     public void adiciona(Produto produto){
 
-        System.out.println("Adicionando: " + produto);
-        this.produtos[contador] = produto;
-        contador++;
-        total += produto.getValor();
+        this.total += produto.getValor();
+        this.produtos.add(produto);
+    }
+
+    public void remove(int posicao){
+        this.produtos.remove(posicao);
     }
 
     public double getTotal(){
         return total;
     }
 
-    public Produto[] getProdutos() {
+    public ArrayList<Produto> getProdutos() {
         return produtos;
     }
     

@@ -1,5 +1,7 @@
 package br.com.casadocodigo.livraria.teste;
 
+import java.util.ArrayList;
+
 import br.com.casadocodigo.livraria.index.Autor;
 import br.com.casadocodigo.livraria.produtos.CarrinhoDeCompras;
 import br.com.casadocodigo.livraria.produtos.Ebook;
@@ -31,18 +33,11 @@ public class RegistroDeVendas {
 
         System.out.println("Total : " + carrinho.getTotal());
 
-        Produto[] produtos = carrinho.getProdutos();
+        ArrayList<Produto> produtos = carrinho.getProdutos();
 
         for(Produto produto : produtos){
 
-            try{
-                
-                if(produto != null){
-                    System.out.println(produto.getValor());
-                }
-            }catch(ArrayIndexOutOfBoundsException | NullPointerException e){
-                System.out.println("Foi uma das duas");
-            }
+            System.out.println(produto);
         }
     }
 }
