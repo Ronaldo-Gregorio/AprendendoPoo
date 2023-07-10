@@ -10,6 +10,11 @@ public abstract class Livro implements Produto{
 	private Autor autor;
 	
 	// inicio metodos
+
+	@Override
+	public String toString(){
+		return "Nome: " + nome + "\nDescrição: " + descricao + "\nValor: " + valor + "\nISBN: " + isbn;
+	}
 	
 	public void mostraDetalhes() {
 		

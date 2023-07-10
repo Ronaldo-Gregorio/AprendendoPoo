@@ -39,6 +39,8 @@ public class CadastroDeLivros extends Livro{
 		ebook.setNome("Java 8 pratico");
 		
 		ebook.mostraDetalhes();
+
+		System.out.println(ebook.toString());
 	}
 
 }

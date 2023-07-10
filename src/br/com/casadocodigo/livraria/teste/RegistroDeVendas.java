@@ -24,7 +24,7 @@ public class RegistroDeVendas {
         ebook.setNome("Teste-Driven Development");
         ebook.setValor(29.90);
 
-        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        CarrinhoDeCompras carrinho = new CarrinhoDeCompras(new Produto[10]);
 
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
