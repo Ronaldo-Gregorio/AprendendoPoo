@@ -2,6 +2,12 @@ package br.com.casadocodigo.livraria.produtos;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Ronaldo Gregorio
+ * 
+ * @version 1.0
+ */
+
 public class GerenciadorDeCupons {
 
     private Map<String, Double> cupons;
